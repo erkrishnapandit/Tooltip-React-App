@@ -1,38 +1,136 @@
+/* Removing Default Margin and Padding */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Adding body height and width as 100% of screen size */
+body, #root{
+  height: 100vh;
+  width: 100%;
+}
+
+/* Styling to app container */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+}
+
+/* Setting Position of button container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Styling to tooltip button */
+.tooltip-button {
+  width: 100px;
+  margin: 0 10px;
+  padding: 8px 16px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Styling to tooltip containet */
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Styling to tooltip display box */
+.tooltip {
+  width:100px;
+  position: absolute;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
+  border-radius: 4px;
+  display: none;
+  z-index: 1;
 }
 
-.App-link {
-  color: #61dafb;
+/* Setting position of tooltip display box */
+.tooltip-left{
+  position: absolute;
+  left: -110px;
+  top: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tooltip-top{
+  position: absolute;
+  left: 10px;
+  top: -50px;
 }
+
+.tooltip-bottom{
+  position: absolute;
+  left: 10px;
+  bottom: -50px;
+}
+
+.tooltip-right{
+  position: absolute;
+  right: -110px;
+  top: 0px;
+}
+
+/* when mouse hover the button, tooltip box will display */
+.tooltip.active {
+  display: block;
+}
+
+/* Position of tooltip text */
+.tooltip-content {
+  position: relative;
+}
+
+/* Styling to tooltip arrow */
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  z-index: 2;
+}
+
+/* Position and Design of tooltip arrow */
+.tooltip-arrow-left {
+  border-width: 6px 0 6px 6px;
+  border-color: transparent transparent transparent rgba(0, 0, 0, 0.8);
+  top: 50%;
+  right: -14px;
+  transform: translateY(-50%);
+}
+
+.tooltip-arrow-top {
+  border-width: 6px 6px 0 6px;
+  border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip-arrow-bottom {
+  border-width: 0 6px 6px 6px;
+  border-color: transparent transparent rgba(0, 0, 0, 0.8) transparent;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip-arrow-right {
+  border-width: 6px 6px 6px 0;
+  border-color: transparent rgba(0, 0, 0, 0.8) transparent transparent;
+  top: 50%;
+  left: -14px;
+  transform: translateY(-50%);
+}
+
+
