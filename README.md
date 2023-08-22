@@ -7,16 +7,16 @@ This is a Tooltip Project, Which has four distint button or we say content and w
 [https://google.com](google.com)
 
 ### Screenshot: Home-page
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](./image/Home-Page.png)
 
 ### Screenshot: Showing Left Tooltip
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](./image/Left-Tooltip.png)
 
 ### Screenshot: Showing Top Tooltip
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](./image/Top-Tooltip.png)
 
 ### Screenshot: Showing Bottom Tooltip
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](./image/Bottom-Tooltip.png)
 
 ### Screenshot: Showing Right Tooltip
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](./image/Right-Tooltip.png)
